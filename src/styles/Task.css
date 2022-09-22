@@ -1,0 +1,70 @@
+.taskContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #2f84bc;
+    border-radius: 5px;
+    margin: 15px;
+    background: rgb(76,206,228);
+    background: linear-gradient(347deg, rgba(76,206,228,1) 7%, rgba(80,130,230,1) 86%);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.taskContainerComplete {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #2f84bc;
+    border-radius: 5px;
+    margin: 15px;
+    background: rgb(76,206,228);
+    background: linear-gradient(347deg, rgb(132, 228, 76) 7%, rgb(29, 150, 88) 86%);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.taskData {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #2f84bc;
+}
+.buttonClose {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    background-color: rgb(199, 94, 94);
+    border: 1px solid rgb(158, 42, 42);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.buttonClose:hover {
+    background-color: rgb(176, 32, 32);
+}
+.buttonCheck {
+    position: absolute;
+    top: 18px;
+    right: 46%;
+    background-color: rgb(70, 207, 161);
+}
+.task {
+    font-weight: 400;
+    font-size: x-large;
+    margin: 25px;
+    transition: 0.3s;
+}
+
+@media (max-width: 500px) {
+    .task {
+        font-weight: 400;
+        font-size: large;
+        margin: 15px;
+    }
+    .taskData {
+        font-size:small;
+    }
+    .buttonClose {
+        right: 2px;
+        top: 2px;
+    }
+}
